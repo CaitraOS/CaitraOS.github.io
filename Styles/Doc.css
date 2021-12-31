@@ -112,8 +112,9 @@ body {
 }
 
 .sticky-nav>.inner-nav>.navmob {
+    display: block !important;
     position: fixed;
-    width: 300px;
+    width: 250px;
     height: 100vh;
     background-color: #00000079;
     display: flex;
@@ -123,6 +124,11 @@ body {
     top: 48px;
     right: 0;
     z-index: 9999999999;
+    transition: all 0.3s ease-in-out;
+}
+
+.sticky-nav>.inner-nav>.right-side>.nav-menu {
+    display: none;
 }
 
 .sticky-nav>.inner-nav>.navmob>li {
@@ -169,6 +175,10 @@ body {
     border: none;
     padding: 10px 12px;
     cursor: pointer;
+}
+
+.sticky-nav>.inner-nav>.right-side>.nav-menu>button.animate {
+    transform: rotate(60deg);
 }
 
 .sticky-nav>.inner-nav>.right-side>.nav-menu>button:hover {
@@ -261,5 +271,8 @@ body {
 @media only screen and (max-width: 600px) {
     .sticky-nav>.inner-nav>.center {
         display: none;
+    }
+    .sticky-nav>.inner-nav>.right-side>.nav-menu {
+        display: flex;
     }
 }
