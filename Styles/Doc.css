@@ -277,6 +277,29 @@ body {
     .sticky-nav>.inner-nav>.right-side>.nav-menu {
         display: flex;
     }
+    .gallery-link-view {
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+    .gallery-link-view>a {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .gallery-link-view>a:last-child {
+        margin-bottom: 0;
+        margin-left: -12px;
+    }
+    footer>.inner-footer {
+        flex-direction: column !important;
+    }
+    footer>.inner-footer>ul {
+        margin-bottom: 12px;
+    }
+    footer>.inner-footer>ul:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .gallery-link-view {
