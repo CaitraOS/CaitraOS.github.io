@@ -272,7 +272,7 @@ body {
     .sticky-nav>.inner-nav>.center {
         display: none;
     }
-    /* .sticky-nav>.inner-nav>.right-side>.nav-menu {
+    .sticky-nav>.inner-nav>.right-side>.nav-menu {
         display: flex;
-    } */
+    }
 }
